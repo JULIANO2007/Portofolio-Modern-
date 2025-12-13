@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Halo! Saya adalah Full-Stack Developer yang bersemangat menciptakan solusi digital inovatif. Lihat portofolio saya yang menampilkan proyek-proyek terbaik." />
+  <meta name="theme-color" content="#0e0e10" />
+  <meta property="og:title" content="Portfolio - Full-Stack Developer" />
+  <meta property="og:description" content="Solusi digital yang inovatif dan user-centric" />
+  <meta property="og:type" content="website" />
+  <title>Portfolio - Full-Stack Developer | Web & Mobile Solutions</title>
+  
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad'><stop offset='0%' style='stop-color:%234d7cff'/><stop offset='100%' style='stop-color:%2300d4ff'/></linearGradient></defs><rect fill='url(%23grad)' width='100' height='100'/><text x='50' y='75' font-size='80' fill='white' text-anchor='middle' font-weight='bold'>D</text></svg>">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">Portfolio</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link" data-section="home">Home</a>
+        <a href="#work" class="nav-link" data-section="work">Work</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Scroll Progress Bar ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="gradient-blob blob-1"></div>
+      <div class="gradient-blob blob-2"></div>
+      <div class="gradient-blob blob-3"></div>
+      <svg class="hero-pattern" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+            <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(77,124,255,0.05)" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="1200" height="600" fill="url(#grid)" />
+      </svg>
+    </div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge fade-in">
+          <span class="badge-dot"></span>
+          <span>Terbuka untuk Peluang Baru 🚀</span>
+        </div>
+        <h1 class="fade-in-delay-1">
+          <span class="text-gradient">Developer Full-Stack</span><br/>
+          <span>dengan Passion untuk Inovasi</span>
+        </h1>
+        <p class="fade-in-delay-2">Saya membangun aplikasi web dan mobile yang tidak hanya indah secara visual, tetapi juga fungsional, cepat, dan user-centric. Setiap proyek adalah kesempatan untuk menciptakan sesuatu yang bermakna.</p>
+        
+        <div class="hero-stats fade-in-delay-3">
+          <div class="stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Klien Puas</span>
+          </div>
+        </div>
+        
+        <div class="cta fade-in-delay-4">
+          <a href="#work" class="btn btn-primary btn-lg">Lihat Proyek Saya</a>
+          <a href="#contact" class="btn btn-outline btn-lg">Hubungi Saya</a>
+        </div>
+        
+        <div class="tech-stack fade-in-delay-4">
+          <span class="tech-label">Tech Stack:</span>
+          <div class="tech-items">
+            <span class="tech-item">React</span>
+            <span class="tech-item">Node.js</span>
+            <span class="tech-item">TypeScript</span>
+            <span class="tech-item">MongoDB</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="floating-card card-1 scroll-reveal">
+          <div class="card-icon">💻</div>
+          <div class="card-text">Web Dev</div>
+        </div>
+        <div class="floating-card card-2 scroll-reveal">
+          <div class="card-icon">🎨</div>
+          <div class="card-text">UI/UX Design</div>
+        </div>
+        <div class="floating-card card-3 scroll-reveal">
+          <div class="card-icon">⚡</div>
+          <div class="card-text">Performance</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Works / Projects ===== -->
+  <section id="work" class="works-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="eyebrow">🚀 Featured Projects</span>
+        <h2>Portofolio Pilihan Saya</h2>
+        <p>Beberapa proyek terbaik yang menunjukkan kemampuan saya dalam membangun aplikasi yang scalable, user-friendly, dan impactful.</p>
+      </div>
+
+      <div class="works-grid">
+        <!-- Project 1 - Featured -->
+        <div class="work-card work-card-featured scroll-reveal">
+          <div class="work-card-header">
+            <div class="work-image-wrapper">
+              <div class="work-image">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="proj1grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#4d7cff;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <rect fill="url(#proj1grad)" width="400" height="250"/>
+                  <circle cx="100" cy="100" r="40" fill="rgba(255,255,255,0.1)"/>
+                  <circle cx="300" cy="150" r="60" fill="rgba(255,255,255,0.15)"/>
+                  <text x="200" y="130" font-size="48" fill="white" text-anchor="middle" font-weight="bold">E-Learning Platform</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-body">
+            <div class="work-category-badge">Fullstack • Web App</div>
+            <h3>E-Learning Platform</h3>
+            <p>Platform pembelajaran online interaktif dengan live class, video hosting, dan student management system yang terintegrasi.</p>
+            <div class="work-stats">
+              <div class="stat-item">
+                <span class="stat-icon">👥</span>
+                <div>
+                  <span class="stat-label">Pengguna Aktif</span>
+                  <span class="stat-value">2,500+</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">⚡</span>
+                <div>
+                  <span class="stat-label">Performance</span>
+                  <span class="stat-value">98/100</span>
+                </div>
+              </div>
+            </div>
+            <div class="work-tech">
+              <span class="tech">React</span>
+              <span class="tech">Node.js</span>
+              <span class="tech">MongoDB</span>
+              <span class="tech">AWS</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="work-card scroll-reveal">
+          <div class="work-card-header">
+            <div class="work-image-wrapper">
+              <div class="work-image">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="proj2grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#ffa600;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <rect fill="url(#proj2grad)" width="400" height="250"/>
+                  <rect x="50" y="60" width="100" height="130" fill="rgba(255,255,255,0.1)"/>
+                  <rect x="170" y="60" width="100" height="130" fill="rgba(255,255,255,0.15)"/>
+                  <rect x="290" y="60" width="80" height="130" fill="rgba(255,255,255,0.2)"/>
+                  <text x="200" y="230" font-size="28" fill="white" text-anchor="middle" font-weight="bold">E-Commerce App</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-body">
+            <div class="work-category-badge">Mobile • iOS & Android</div>
+            <h3>Fashion E-Commerce App</h3>
+            <p>Aplikasi mobile untuk online shopping dengan fitur AR try-on, personalized recommendations, dan seamless checkout.</p>
+            <div class="work-tech">
+              <span class="tech">React Native</span>
+              <span class="tech">Firebase</span>
+              <span class="tech">Stripe</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work-card scroll-reveal">
+          <div class="work-card-header">
+            <div class="work-image-wrapper">
+              <div class="work-image">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="proj3grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <rect fill="url(#proj3grad)" width="400" height="250"/>
+                  <circle cx="80" cy="80" r="35" fill="rgba(255,255,255,0.15)"/>
+                  <circle cx="320" cy="170" r="45" fill="rgba(255,255,255,0.1)"/>
+                  <text x="200" y="130" font-size="42" fill="white" text-anchor="middle" font-weight="bold">CRM System</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-body">
+            <div class="work-category-badge">SaaS • Enterprise</div>
+            <h3>CRM Management System</h3>
+            <p>Sistem manajemen customer relationship dengan automation, analytics, dan integration ke berbagai platform.</p>
+            <div class="work-tech">
+              <span class="tech">Vue.js</span>
+              <span class="tech">Django</span>
+              <span class="tech">PostgreSQL</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline">Lihat Detail →</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="work-card scroll-reveal">
+          <div class="work-card-header">
+            <div class="work-image-wrapper">
+              <div class="work-image">
+                <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="proj4grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style="stop-color:#00c9ff;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#92fe9d;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <rect fill="url(#proj4grad)" width="400" height="250"/>
+                  <path d="M 200 50 L 250 150 L 200 200 L 150 150 Z" fill="rgba(255,255,255,0.2)"/>
+                  <text x="200" y="230" font-size="28" fill="white" text-anchor="middle" font-weight="bold">Health Tracker</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="work-card-body">
+            <div class="work-category-badge">Health Tech • Web App</div>
+            <h3>Health & Fitness Tracker</h3>
+            <p>Aplikasi tracking kesehatan dengan monitoring aktivitas, nutrisi, dan integrase dengan wearable devices.</p>
+            <div class="work-tech">
+              <span class="tech">Next.js</span>
+              <span class="tech">GraphQL</span>
+              <span class="tech">HealthKit API</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-outline">Lihat Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="see-more">
+        <p>Tertarik dengan lebih banyak proyek?</p>
+        <a href="#" class="btn btn-primary">Lihat Portofolio Lengkap →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <div class="about-content">
+        <div class="about-text scroll-reveal">
+          <span class="eyebrow">👋 Tentang Saya</span>
+          <h2>Salam! Saya Adalah Developer dengan Passion</h2>
+          <p>Saya adalah full-stack developer dari Jakarta yang bersemangat mengubah ide menjadi produk digital yang impact. Dengan lebih dari 4 tahun pengalaman, saya telah membantu startup dan perusahaan besar untuk mengembangkan aplikasi web dan mobile yang scalable.</p>
+          
+          <p>Keahlian saya mencakup frontend development modern, backend architecture, dan everything in between. Saya percaya bahwa coding bukan hanya tentang functionality, tetapi juga tentang menciptakan user experience yang memorable dan kode yang maintainable.</p>
+          
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎯</span>
+              <div>
+                <h4>Problem Solver</h4>
+                <p>Suka menganalisis masalah dan menemukan solusi yang elegant</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🚀</span>
+              <div>
+                <h4>Quick Learner</h4>
+                <p>Selalu update dengan teknologi terbaru dan best practices</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🤝</span>
+              <div>
+                <h4>Team Player</h4>
+                <p>Percaya pada collaborative development dan komunikasi yang jelas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats scroll-reveal">
+          <div class="stat-card">
+            <div class="stat-number">15+</div>
+            <div class="stat-text">Proyek Selesai</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">4+</div>
+            <div class="stat-text">Tahun Pengalaman</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-text">Klien Puas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-text">Dedicated</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <div class="view-all-works">
+        <a href="#" class="btn btn-secondary">Lihat Semua Proyek →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="eyebrow">🛠️ Skills & Technology</span>
+        <h2>Technology Stack Saya</h2>
+        <p>Teknologi dan tools yang saya kuasai untuk membangun aplikasi yang scalable dan user-friendly.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category scroll-reveal">
+          <h3>Frontend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React & Next.js</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Tailwind CSS & SCSS</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Vue.js</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category scroll-reveal">
+          <h3>Backend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Node.js & Express</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">MongoDB & PostgreSQL</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python & Django</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">REST & GraphQL APIs</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 92%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="skill-category scroll-reveal">
+          <h3>Mobile Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React Native</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Flutter</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Expo & Native APIs</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category scroll-reveal">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git & GitHub</span>
+                <span class="skill-level">Expert</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 98%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">AWS & Firebase</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Docker & CI/CD</span>
+                <span class="skill-level">Advanced</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Figma & Design</span>
+                <span class="skill-level">Intermediate</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact-section">
+    <div class="contact-bg">
+      <div class="contact-gradient"></div>
+    </div>
+
+    <div class="section-container">
+      <div class="section-header">
+        <span class="eyebrow">💬 Mari Terhubung</span>
+        <h2>Siap untuk Berkolaborasi?</h2>
+        <p>Saya selalu terbuka untuk diskusi, project baru, atau sekadar mengobrol tentang web development. Hubungi saya!</p>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-form-wrapper scroll-reveal">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nama Anda</label>
+              <input type="text" id="name" name="name" placeholder="Siapa nama Anda?" required>
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Apa yang ingin Anda diskusikan?" required>
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" placeholder="Ceritakan ide atau pertanyaan Anda..." rows="5" required></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">
+              <span>Kirim Pesan</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="btn-icon">
+                <path d="M22 2L11 13m11-11l-7 20-4-9-9-4 20-7z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <p class="form-note">Saya biasanya merespon dalam 24 jam ⏱️</p>
+          </form>
+          <div id="successMessage" class="success-message" style="display: none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <p>Terima kasih! Pesan Anda sudah diterima. Saya akan segera menghubungi Anda.</p>
+          </div>
+        </div>
+
+        <div class="contact-info scroll-reveal">
+          <div class="contact-card">
+            <div class="contact-icon">💼</div>
+            <h4>Email</h4>
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/62123456789">+62 123 456 789</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h4>Lokasi</h4>
+            <p>Jakarta, Indonesia</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">🔗</div>
+            <h4>Social Media</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.953 4.57a10 10 0 002.856-3.426 9.876 9.876 0 01-2.958.856 4.734 4.734 0 002.073-2.611 9.75 9.75 0 01-3.014 1.145 4.926 4.926 0 00-8.395 4.491 13.978 13.978 0 01-10.122-5.138 4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+            <a href="#contact" class="btn btn-primary">Mulai Proyek Bersama</a>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="stats-showcase">
+            <div class="stat-card">
+              <div class="stat-icon">📊</div>
+              <div class="stat-body">
+                <h4>Research-Driven</h4>
+                <p>Setiap keputusan desain didukung oleh data dan user insights</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🎯</div>
+              <div class="stat-body">
+                <h4>Goal-Oriented</h4>
+                <p>Fokus pada business objectives dan user satisfaction</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">🚀</div>
+              <div class="stat-body">
+                <h4>Innovation-Driven</h4>
+                <p>Selalu mencari cara baru untuk meningkatkan user experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <div class="contact-content">
+        <div class="contact-header">
+          <span class="eyebrow">Let's Work Together</span>
+          <h2>Siap Menciptakan Sesuatu yang Luar Biasa?</h2>
+          <p>Saya selalu terbuka untuk diskusi tentang proyek baru, ide kreatif, atau opportunity kolaborasi. Mari kita buat sesuatu yang benar-benar meaningful.</p>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Ceritakan tentang proyek Anda..." rows="5" required></textarea>
+              <span class="form-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Kirim Pesan</button>
+          </form>
+          <div class="contact-alternatives">
+            <h4>Atau hubungi langsung:</h4>
+            <div class="contact-methods">
+              <a href="mailto:hello@email.com" class="contact-method">
+                <span class="method-icon">✉</span>
+                <span>hello@email.com</span>
+              </a>
+              <a href="https://linkedin.com" class="contact-method" target="_blank">
+                <span class="method-icon">in</span>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://twitter.com" class="contact-method" target="_blank">
+                <span class="method-icon">𝕏</span>
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">Dev Portfolio</span>
+          </div>
+          <p>Full-Stack Developer yang passionate menciptakan solusi digital yang impactful.</p>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#work">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-section">
+        <h4>Services</h4>
+        <nav class="footer-nav">
+          <a href="#">Web Development</a>
+          <a href="#">Mobile App</a>
+          <a href="#">UI/UX Design</a>
+          <a href="#">Consulting</a>
+        </nav>
+      </div>
+
+      <div class="footer-section">
+        <h4>Follow Me</h4>
+        <div class="social-links footer-social">
+          <a href="#" class="social-link" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" title="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.953 4.57a10 10 0 002.856-3.426 9.876 9.876 0 01-2.958.856 4.734 4.734 0 002.073-2.611 9.75 9.75 0 01-3.014 1.145 4.926 4.926 0 00-8.395 4.491 13.978 13.978 0 01-10.122-5.138 4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Developer Portfolio. Dibuat dengan ❤️ dan React + Node.js</p>
+      <div class="footer-credits">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JavaScript ===== -->
+  <script src="js/script.js"></script>
+</body>
+</html>
